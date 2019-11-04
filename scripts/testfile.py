@@ -14,8 +14,8 @@ for strLine in fileInput:
     if(count>1000):
         fileOutput.close()
         count=1
-        sent=sent+1
         fileOutput = open("Rawsequences_training{0}.fatsa".format(sent), "w")
+        sent=sent+1
     #Strip the endline character from each input line
     strLine = strLine.rstrip("\n")
     #Output the header
